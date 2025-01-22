@@ -3,7 +3,13 @@ require('plugins')
 
 -- treesitter
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"c", "lua", "python"},
+  ensure_installed = {
+      "c",
+      "lua",
+      "python",
+      "markdown",
+      "bash"
+  },
 
   sync_install = false,
   auto_install = true,
