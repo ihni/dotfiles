@@ -10,6 +10,10 @@ mkdir ~/.config
 mkdir -p ~/.config/zsh
 cp zsh/.zshrc ~/.config/zsh
 
-# settings up kitty
+# setting up kitty
 mkdir -p ~/.config/kitty
 cp kitty/kitty.conf ~/.config/kitty
+
+# setting up nvim
+mkdir -p ~/.config/nvim
+cp -r nvim/* ~/.config/nvim
