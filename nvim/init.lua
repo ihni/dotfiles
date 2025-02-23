@@ -8,7 +8,8 @@ require'nvim-treesitter.configs'.setup {
       "lua",
       "python",
       "markdown",
-      "bash"
+      "bash",
+      "asm"
   },
 
   sync_install = false,
@@ -18,6 +19,23 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   },
 }
+-- oil / file explorer
+require("oil").setup({
+    default_file_explorer = true,
+    columns = {
+        "icon",
+        -- "permissions",
+        -- "size",
+        -- "mtime",
+    },
+    keymaps = {
+        ["<C-h>"] = false,
+        ["<M-h>"] = "actions.select_split",
+    },
+    view_options = {
+        show_hidden = true,
+    },
+})
 
 -- colorscheme
 vim.o.background = "dark" -- or "light" for light mode
@@ -27,7 +45,7 @@ require("gruvbox").setup({
   underline = true,
   bold = true,
   italic = {
-    strings = true,
+    strings = false,
     emphasis = true,
     comments = true,
     operators = false,

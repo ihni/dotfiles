@@ -26,6 +26,8 @@ o.backup = false
 o.hlsearch = false
 o.incsearch = true
 
+o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+
 o.termguicolors = true
 
 o.scrolloff = 8
