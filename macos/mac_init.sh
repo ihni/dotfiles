@@ -91,9 +91,9 @@ setup_oh_my_zsh() {
 
     # installing plugins for zsh
     rm -rf ~/.oh-my-zsh/plugins/zsh-autosuggestions
-    rm -rf ~/.oh-my-zsh/plugins/zsh-syntaax-highlighting
-    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/
+    rm -rf ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
     
     rm -rf ~/.config/zsh
     mkdir -p ~/.config/zsh

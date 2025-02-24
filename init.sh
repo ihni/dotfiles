@@ -15,7 +15,7 @@ detect_os() {
 os=$(detect_os)
 if [[ "$os" == "macOS" ]]; then
     cd macos
-    bash ./macos_init.sh
+    bash ./mac_init.sh
 elif [[ "$os" == "linux" ]]; then
     cd linux
     bash ./linux_init.sh

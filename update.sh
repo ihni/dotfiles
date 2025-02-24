@@ -15,7 +15,7 @@ detect_os() {
 os=$(detect_os)
 if [[ "$os" == "macOS" ]]; then
     cd macos
-    bash ./macos_update.sh
+    bash ./mac_update.sh
 elif [[ "$os" == "linux" ]]; then
 	cd linux
     bash ./linux_update.sh
