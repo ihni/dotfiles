@@ -90,6 +90,8 @@ setup_oh_my_zsh() {
     echo "oh-my-zsh has now been installed"
 
     # installing plugins for zsh
+    rm -rf ~/.oh-my-zsh/plugins/zsh-autosuggestions
+    rm -rf ~/.oh-my-zsh/plugins/zsh-syntaax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/
     git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/
     
@@ -148,5 +150,6 @@ setup_kitty
 echo "finished running init script!"
 
 clear
+rm -rf nohup.out
 
 exec zsh
