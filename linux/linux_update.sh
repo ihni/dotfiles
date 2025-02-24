@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm  ~/.zshenv
+rm rf ~/.zshenv
 cp .zshenv ~
 
 # rm -r ~/.config

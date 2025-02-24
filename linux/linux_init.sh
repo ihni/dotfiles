@@ -82,6 +82,12 @@ setup_oh_my_zsh() {
         exit 1
     fi
     echo "oh-my-zsh has now been installed."
+    
+    # installing plugins for zsh
+    rm -rf ~/.oh-my-zsh/plugins/zsh-autosuggestions
+    rm -rf ~/.oh-my-zsh/plugins/zsh-syntaax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
     rm -rf ~/.config/zsh
     mkdir -p ~/.config/zsh
@@ -120,6 +126,7 @@ setup_kitty() {
 packages=(
     "zsh" "neovim" "git"
     "curl" "wget" "xclip"
+    "fastfetch"
 )
 
 manager=$(detect_package_manager)
@@ -138,5 +145,6 @@ echo "Finished running init script!"
 echo "Restarting terminal!!"
 
 clear
+rm -rf nohup.out 
 
 exec zsh

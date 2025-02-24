@@ -89,6 +89,10 @@ setup_oh_my_zsh() {
     fi
     echo "oh-my-zsh has now been installed"
 
+    # installing plugins for zsh
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/
+    
     rm -rf ~/.config/zsh
     mkdir -p ~/.config/zsh
     cp -r zsh/.* ~/.config/zsh
@@ -125,6 +129,7 @@ setup_kitty() {
 packages=(
     "zsh" "neovim" "git"
     "wget" "kitty"
+    "fastfetch"
 )
 
 install_xcode

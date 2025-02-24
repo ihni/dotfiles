@@ -1,6 +1,18 @@
 # aliases
 alias vim=nvim
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gco='git checkout'
+alias gb='git branch'
+alias gp='git push'
+alias gpl='git pull'
+alias gd='git diff'
+alias gcl='git clone'
+alias gf='git fetch'
+alias gl='git log'
+
 # move .zscompdump files into hidden directory
 autoload -Uz compinit
 compinit -d ~/.config/zsh/.zcompdump
