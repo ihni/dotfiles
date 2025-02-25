@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# all my packages for fresh install
+packages=(
+    "zsh" "neovim" "git"
+    "curl" "wget" "xclip"
+    "fastfetch" "tmux"
+    "bat"
+)
+
 trap 'echo "an error occured at line $LINENO. Exiting..."; exit 1' ERR
 
 # functions
@@ -123,11 +131,6 @@ setup_kitty() {
 #
 # running script
 #
-packages=(
-    "zsh" "neovim" "git"
-    "curl" "wget" "xclip"
-    "fastfetch"
-)
 
 manager=$(detect_package_manager)
 

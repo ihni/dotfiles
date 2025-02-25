@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# all my packages here
+packages=(
+    "zsh" "neovim" "git"
+    "wget" "kitty" "bat"
+    "fastfetch" "tmux"
+)
+
 trap 'echo "an error occured at line $LINENO.  Exiting..."; exit 1' ERR
 
 # functions
@@ -128,11 +135,6 @@ setup_kitty() {
 #
 # running script
 #
-packages=(
-    "zsh" "neovim" "git"
-    "wget" "kitty"
-    "fastfetch"
-)
 
 install_xcode
 install_homebrew
