@@ -107,6 +107,17 @@ setup_oh_my_zsh() {
     cp -r zsh/.* ~/.config/zsh
 }
 
+setup_tmux() {
+    rm -rf ~/.tmux
+    rm -f ~/.tmux.conf
+
+    cp tmux/.tmux.conf ~ 
+
+    # installing tpm and setting it up
+    # prefix + I to install packages
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+}
+
 setup_nvim() {
     if ! command -v nvim &> /dev/null; then
         echo "nvim wasn't installed or was corrupted, please reinstall"
@@ -142,6 +153,7 @@ install_packages "${packages[@]}"
 
 setup_zsh
 setup_oh_my_zsh
+setup_tmux
 setup_nvim
 setup_kitty
 

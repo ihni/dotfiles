@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf ~/.zshenv
+rm -f ~/.zshenv
 cp .zshenv ~
 
 # rm -r ~/.config
@@ -10,6 +10,10 @@ cp .zshenv ~
 rm -rf ~/.config/zsh
 mkdir -p ~/.config/zsh
 cp -r zsh/.* ~/.config/zsh
+
+# setting up tmux
+rm -f ~/.tmux.conf
+cp tmux/.tmux.conf ~
 
 # setting up kitty
 rm -rf ~/.config/kitty
