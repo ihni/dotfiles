@@ -1,6 +1,7 @@
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'christoomey/vim-tmux-navigator'
     use { "ellisonleao/gruvbox.nvim" }
     use {
         'nvim-lualine/lualine.nvim',
