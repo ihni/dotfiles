@@ -13,7 +13,7 @@ cp -r zsh/.* ~/.config/zsh
 
 # setting up tmux
 rm -f ~/.tmux.conf
-cp tmux/.tmux.conf ~
+cp .tmux.conf ~
 
 # setting up kitty
 rm -rf ~/.config/kitty

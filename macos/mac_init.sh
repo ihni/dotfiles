@@ -111,7 +111,7 @@ setup_tmux() {
     rm -rf ~/.tmux
     rm -f ~/.tmux.conf
 
-    cp tmux/.tmux.conf ~ 
+    cp .tmux.conf ~ 
 
     # installing tpm and setting it up
     # prefix + I to install packages
